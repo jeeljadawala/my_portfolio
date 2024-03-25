@@ -16,9 +16,10 @@ export default function Home() {
               height={{xs: '35vh', md: '40vh'}}
               borderRadius={'50%'} p={'0.75rem'} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}}/>
          <Box>
+         
             <h1>Hi, I'm <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{info.firstName}</span><span className={Style.hand}>🤚</span>
             </h1>
-            <h2> {info.position}.</h2>
+            <h3> {info.position}.</h3>
             <Box component={'ul'} p={'0.8rem'}>
                
                {/* {info.miniBio.map((bio, index) => (
@@ -30,7 +31,13 @@ export default function Home() {
                   <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
                ))}
             </Box>
+            <Box>
+              
+               <p>I design and develop app, from inception to implementation.</p>
+            </Box>
          </Box>
+         
       </Box>
+      
    )
 }

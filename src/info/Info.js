@@ -6,22 +6,17 @@ import mock4 from "../img/mock4.png"
 import mock5 from "../img/mock5.png"
 
 export let colors = ["rgb(194, 46, 98)", "rgb(120, 97, 174)"];
-/*
-I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
-These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
-the site.
- */
+
 
 export const info = {
     firstName: "Jeel",
     lastName: "Jadawala",
     initials: "jj", // the example uses first and last, but feel free to use three or more if you like.
-    position: "A Full Stack Developer / Mobile Application Developer",
+    position: "A Full Stack Developer / Application Developer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
-    miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
-        {
+    miniBio: [         {
             emoji: '☕',
             text: 'fueled by coffee'
         },
@@ -64,67 +59,70 @@ export const info = {
             icon: "fa fa-envelope",
             label: 'gmail'
         }
-// Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-// Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "'Crafting Code, Creating Solutions' is how I would like to introduce myself. Passionate full-stack developer holding Oracle Certified Associate(OCA), Java Programmer certification, having 3+ years of experience building React, Angular, and Java-based applications.",
     skills:
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
+            proficientWith: ['java', 'python', 'c', 'javascript', 'd3.js', 'php', 'dart', 'sql', 'pl/sql', 'shell scripting',
+            'mysql', 'postgresql', 'sql server', 'google firebase', 'mongodb',
+            'html', 'css', 'bootstrap', 'javascript', 'react.js',
+            'eclipse', 'android studio', 'vs code', 'apache tomcat', 'wamp', 'atlassian jira', 'postman',
+            'git', 'github',
+            'spring boot', 'flutter', 'node.js', 'express.js', 'junit',
+            'microsoft excel', 'power bi', 'tableau', 'rapidminer'],
+            exposedTo: ['sdlc', 'agile', 'waterfall', 'iterative', 'scrum', 'design patterns'
+        ]
         }
     ,
-    hobbies: [
+    portfolio: [ 
         {
-            label: 'reading',
-            emoji: '📖'
-        },
-        {
-            label: 'theater',
-            emoji: '🎭'
-        },
-        {
-            label: 'movies',
-            emoji: '🎥'
-        },
-        {
-            label: 'cooking',
-            emoji: '🌶'
-        }
-// Same as above, change the emojis to match / relate to your hobbies or interests.
-// You can also remove the emojis if you'd like, I just think they look cute :P
-    ],
-    portfolio: [ // This is where your portfolio projects will be detailed
-        {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+            title: "Employee Management System",
+            technology: "",
+          source: "https://github.com/jeeljadawala/Employee_mgmt_springboot_angular", 
             image: mock1
         },
         {
-            title: "Customer Segmentation",
-            live: "https://paytonpierce.dev",
+            title: "Web Search Engine",
+            technology: "",
+          source: "https://github.com/paytonjewell", 
+            image: mock1
+        },
+        {
+            title: "Gmail data analysis dashboard ",
+            technology: "",
+          source: "https://github.com/jeeljadawala/gmail_analysis", 
+            image: mock1
+        },
+        {
+            title: "Sales Insight Analysis ",
+            technology: "",
+          source: "https://github.com/jeeljadawala/Sales_insight", 
+            image: mock1
+        },
+        {
+            title: "Customer Segmentation for Targeted Marketing",
+            technology: "",
             source: "https://colab.research.google.com/drive/1LM-RoQRsyop541194mY0wXcuBXiQlolL?usp=sharing",
-            image: mock2
+            image: mock1
         },
         {
             title: "Senseware",
-            live: "https://paytonpierce.dev",
+            technology: "",
             source: "https://github.com/jeeljadawala/Senseware_1",
-            image: mock3
+            image: mock1
         },
         {
-            title: "Indian Import Export Trade Dashboard",
-            live: "https://paytonpierce.dev",
+            title: "Indian Import Export Trade Analysis Dashboard",
+            technology: "",
             source: "https://github.com/jeeljadawala/Indian_import-export-trade_Dashboard",
-            image: mock4
+            image: mock1
         },
         {
             title: "My notes",
-            live: "https://paytonpierce.dev",
+            technology: "",
             source: "https://github.com/jeeljadawala/Flask",
-            image: mock5
+            image: mock1
         }
     ]
 }
